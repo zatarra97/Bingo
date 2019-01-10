@@ -110,6 +110,7 @@
             'TODO azzerrare le varie textbox future
             Labelextractnumber.Text = ""
             History.TextBoxHistory.Text = ""
+            TextBoxStoricoHomeScreen.Text = History.TextBoxHistory.Text
             TextBox1.Text = ""
             numeriImmessi = 0
             Labelimmessi.Text = numeriImmessi   'DA CANCELLARE
@@ -139,6 +140,7 @@
             While testo <> ""
                 posizione = testo.IndexOf(" - ")
                 stringaNumeroAndMiddleScore = testo.Substring(0, posizione)
+
                 TextBox1.Text = stringaNumeroAndMiddleScore
                 numeroPreciso = TextBox1.Text
                 If TextBox1.Text > 9 Then
@@ -173,7 +175,7 @@
             'Altrimenti rimuovo solamente l'ultimo numero
         Else
             newString = History.TextBoxHistory.Text
-            newString = Replace(History.TextBoxHistory.Text, " - " & Labelextractnumber.Text, "")
+            newString = Replace(History.TextBoxHistory.Text, " - " & Labelextractnumber.Text & " ", " ")
             History.TextBoxHistory.Text = newString
             TextBoxStoricoHomeScreen.Text = History.TextBoxHistory.Text 'DA CANCELLARE
         End If
@@ -246,6 +248,7 @@
                 While testo <> ""
                     posizione = testo.IndexOf(" - ")
                     stringaNumeroAndMiddleScore = testo.Substring(0, posizione)
+                    LabelLastOne.Text = posizione
                     TextBox1.Text = stringaNumeroAndMiddleScore 
                     numeroPreciso = TextBox1.Text
                     If TextBox1.Text.Length = 2 Then
@@ -270,4 +273,6 @@
             End If
         End If
     End Sub
+
+    
 End Class
