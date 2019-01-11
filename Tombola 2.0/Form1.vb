@@ -60,27 +60,39 @@
         AnnullaUltimoNumeroToolStripMenuItem.Enabled = True
         VisualizzaStoricoToolStripMenuItem.Enabled = True
         Dim id As Integer = Integer.Parse(sender.Tag)
-        'cambia colore il pulsante premuto
-        numeri(id).BackColor = Color.CornflowerBlue
-        Labelextractnumber.Text = numeri(id).Text
-        ExtractNumber.Show()
 
-        numeriImmessi += 1
-        Labelimmessi.Text = numeriImmessi 'DA CANCELLARE
-        'Aggiungi numero allo storico
-        History.TextBoxHistory.Text = History.TextBoxHistory.Text & id + 1 & " - "
 
-        'Scrivi il numero del pulsante sul form adatto
-        If id + 1 > 9 Then
-            ExtractNumber.LabelDoubleNumber.Visible = True
-            ExtractNumber.LabelDoubleNumber.Text = id + 1
+
+        'Controlla se il numero è già stato estratto
+        If TextBox3.Text.Contains(" " & numeri(id).Text & " ") Then
+            'non fare niente
         Else
-            ExtractNumber.LabelSingleNUmber.Visible = True
-            ExtractNumber.LabelSingleNUmber.Text = id + 1
+            'cambia colore il pulsante premuto
+            numeri(id).BackColor = Color.CornflowerBlue
+            Labelextractnumber.Text = numeri(id).Text
+            ExtractNumber.Show()
+            numeriImmessi += 1
+            Labelimmessi.Text = numeriImmessi 'DA CANCELLARE
+
+
+
+
+            'Aggiungi numero allo storico e anche sulla home page
+            History.TextBoxHistory.Text = History.TextBoxHistory.Text & id + 1 & " - "
+            TextBox3.Text = " " & Replace(History.TextBoxHistory.Text, " - ", " ")
+            TextBoxStoricoHomeScreen.Text = History.TextBoxHistory.Text 'DA CANCELLARE
+
+            'Scrivi il numero del pulsante sul form adatto
+            If id + 1 > 9 Then
+                ExtractNumber.LabelDoubleNumber.Visible = True
+                ExtractNumber.LabelDoubleNumber.Text = id + 1
+            Else
+                ExtractNumber.LabelSingleNUmber.Visible = True
+                ExtractNumber.LabelSingleNUmber.Text = id + 1
+            End If
+
+
         End If
-
-        TextBoxStoricoHomeScreen.Text = History.TextBoxHistory.Text 'DA CANCELLARE
-
 
     End Sub
 
@@ -107,11 +119,13 @@
                 numeri(i).BackColor = Color.LightGray
             Next
 
-            'TODO azzerrare le varie textbox future
+            AnnullaUltimoNumeroToolStripMenuItem.Enabled = False
+            VisualizzaStoricoToolStripMenuItem.Enabled = False
             Labelextractnumber.Text = ""
             History.TextBoxHistory.Text = ""
             TextBoxStoricoHomeScreen.Text = History.TextBoxHistory.Text
             TextBox1.Text = ""
+            TextBox3.Text = "" 'Controllo numeri già estratti
             numeriImmessi = 0
             Labelimmessi.Text = numeriImmessi   'DA CANCELLARE
             numeriCancellati = 0
@@ -162,6 +176,7 @@
             numeriCancellati += 1
             Labelcancel.Text = numeriCancellati    'DA CANCELLARE
             numeri(Labelextractnumber.Text - 1).BackColor = Color.LightGray
+            
         End If
 
 
@@ -170,16 +185,24 @@
         'Se è l'ultimo numero nello storico svuoto la pagina
         If numeriImmessi = numeriCancellati Then
             AnnullaUltimoNumeroToolStripMenuItem.Enabled = False
+            VisualizzaStoricoToolStripMenuItem.Enabled = False
             History.TextBoxHistory.Text = ""
             TextBoxStoricoHomeScreen.Text = History.TextBoxHistory.Text 'DA CANCELLARE
+
+            'Serve per il controllo successivamente se un numero è stato già estratto
+            TextBox3.Text = " " & Replace(History.TextBoxHistory.Text, " - ", " ")
+
             'Altrimenti rimuovo solamente l'ultimo numero
         Else
             newString = History.TextBoxHistory.Text
             newString = Replace(History.TextBoxHistory.Text, " - " & Labelextractnumber.Text & " ", " ")
             History.TextBoxHistory.Text = newString
             TextBoxStoricoHomeScreen.Text = History.TextBoxHistory.Text 'DA CANCELLARE
-        End If
 
+            'Serve per il controllo successivamente se un numero è stato già estratto
+            TextBox3.Text = " " & Replace(History.TextBoxHistory.Text, " - ", " ")
+        End If
+        'TODO Quando ci sono più numeri uguali nello storico c'è un bug
         
 
 
@@ -243,6 +266,8 @@
                 VisualizzaStoricoToolStripMenuItem.Enabled = True
                 History.TextBoxHistory.Text = testo
                 TextBoxStoricoHomeScreen.Text = testo           'DA CANCELLARE
+                'Serve per il controllo successivamente se un numero è stato già estratto
+                TextBox3.Text = " " & Replace(History.TextBoxHistory.Text, " - ", " ")
 
                 'Algoritmo di controllo numeri già estratti
                 While testo <> ""
@@ -269,10 +294,25 @@
                     posizione = 0
                 End While
 
-
             End If
         End If
     End Sub
 
     
+    
+    Private Sub AnteprimaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AnteprimaToolStripMenuItem.Click
+        PrintPreviewDialog1.ShowDialog()
+    End Sub
+
+    Private Sub StampaToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles StampaToolStripMenuItem1.Click
+        PrintDialog1.ShowDialog()
+    End Sub
+
+    Private Sub PrintDocument1_PrintPage(ByVal sender As System.Object, ByVal e As System.Drawing.Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
+        'attributo del nostro foglio stampato: testo, font , colore, distanza margine bordo sx in pixel, distanza margine superiore in pixel
+        e.Graphics.DrawString("Numeri estratti: ", History.TextBoxHistory.Font, Brushes.Red, 100, 100)
+        e.Graphics.DrawString(History.TextBoxHistory.Text, History.TextBoxHistory.Font, Brushes.Black, 100, 150)
+
+        'TODO sistemare impaginazione
+    End Sub
 End Class

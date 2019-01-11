@@ -29,6 +29,8 @@ Partial Class Form1
         Me.SalvaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CaricaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StampaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AnteprimaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StampaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.EsciToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StrumentiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AnnullaUltimoNumeroToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -52,6 +54,11 @@ Partial Class Form1
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.LabelLastOne = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
+        Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
+        Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -92,9 +99,22 @@ Partial Class Form1
         '
         'StampaToolStripMenuItem
         '
+        Me.StampaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AnteprimaToolStripMenuItem, Me.StampaToolStripMenuItem1})
         Me.StampaToolStripMenuItem.Name = "StampaToolStripMenuItem"
         Me.StampaToolStripMenuItem.Size = New System.Drawing.Size(167, 24)
-        Me.StampaToolStripMenuItem.Text = "Stampa"
+        Me.StampaToolStripMenuItem.Text = "Stampante"
+        '
+        'AnteprimaToolStripMenuItem
+        '
+        Me.AnteprimaToolStripMenuItem.Name = "AnteprimaToolStripMenuItem"
+        Me.AnteprimaToolStripMenuItem.Size = New System.Drawing.Size(152, 24)
+        Me.AnteprimaToolStripMenuItem.Text = "Anteprima"
+        '
+        'StampaToolStripMenuItem1
+        '
+        Me.StampaToolStripMenuItem1.Name = "StampaToolStripMenuItem1"
+        Me.StampaToolStripMenuItem1.Size = New System.Drawing.Size(152, 24)
+        Me.StampaToolStripMenuItem1.Text = "Stampa"
         '
         'EsciToolStripMenuItem
         '
@@ -244,9 +264,9 @@ Partial Class Form1
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(88, 28)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(109, 17)
+        Me.Label4.Size = New System.Drawing.Size(107, 17)
         Me.Label4.TabIndex = 11
-        Me.Label4.Text = "NUmeri immessi"
+        Me.Label4.Text = "Numeri immessi"
         '
         'Label5
         '
@@ -274,11 +294,49 @@ Partial Class Form1
         Me.LabelLastOne.Size = New System.Drawing.Size(0, 17)
         Me.LabelLastOne.TabIndex = 13
         '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(16, 729)
+        Me.TextBox3.Multiline = True
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(272, 252)
+        Me.TextBox3.TabIndex = 15
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(17, 709)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(266, 17)
+        Me.Label7.TabIndex = 16
+        Me.Label7.Text = "Verifica se un numero è stato già inserito"
+        '
+        'PrintDialog1
+        '
+        Me.PrintDialog1.Document = Me.PrintDocument1
+        Me.PrintDialog1.UseEXDialog = True
+        '
+        'PrintDocument1
+        '
+        '
+        'PrintPreviewDialog1
+        '
+        Me.PrintPreviewDialog1.AutoScrollMargin = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.AutoScrollMinSize = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.ClientSize = New System.Drawing.Size(400, 300)
+        Me.PrintPreviewDialog1.Document = Me.PrintDocument1
+        Me.PrintPreviewDialog1.Enabled = True
+        Me.PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), System.Drawing.Icon)
+        Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        Me.PrintPreviewDialog1.Visible = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1371, 643)
+        Me.ClientSize = New System.Drawing.Size(1371, 877)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.LabelLastOne)
         Me.Controls.Add(Me.Label5)
@@ -337,5 +395,12 @@ Partial Class Form1
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents LabelLastOne As System.Windows.Forms.Label
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents PrintDialog1 As System.Windows.Forms.PrintDialog
+    Friend WithEvents PrintDocument1 As System.Drawing.Printing.PrintDocument
+    Friend WithEvents PrintPreviewDialog1 As System.Windows.Forms.PrintPreviewDialog
+    Friend WithEvents AnteprimaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents StampaToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
 
 End Class
