@@ -36,6 +36,7 @@ Partial Class Form1
         Me.AnnullaUltimoNumeroToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VisualizzaStoricoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ImpostaPremiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OpzioniToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.InformazioniSuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -59,7 +60,6 @@ Partial Class Form1
         Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
-        Me.OpzioniToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -149,6 +149,12 @@ Partial Class Form1
         Me.ImpostaPremiToolStripMenuItem.Name = "ImpostaPremiToolStripMenuItem"
         Me.ImpostaPremiToolStripMenuItem.Size = New System.Drawing.Size(230, 24)
         Me.ImpostaPremiToolStripMenuItem.Text = "Imposta Premi"
+        '
+        'OpzioniToolStripMenuItem
+        '
+        Me.OpzioniToolStripMenuItem.Name = "OpzioniToolStripMenuItem"
+        Me.OpzioniToolStripMenuItem.Size = New System.Drawing.Size(230, 24)
+        Me.OpzioniToolStripMenuItem.Text = "Opzioni"
         '
         'ToolStripMenuItem1
         '
@@ -330,12 +336,6 @@ Partial Class Form1
         Me.PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), System.Drawing.Icon)
         Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
         Me.PrintPreviewDialog1.Visible = False
-        '
-        'OpzioniToolStripMenuItem
-        '
-        Me.OpzioniToolStripMenuItem.Name = "OpzioniToolStripMenuItem"
-        Me.OpzioniToolStripMenuItem.Size = New System.Drawing.Size(230, 24)
-        Me.OpzioniToolStripMenuItem.Text = "Opzioni"
         '
         'Form1
         '

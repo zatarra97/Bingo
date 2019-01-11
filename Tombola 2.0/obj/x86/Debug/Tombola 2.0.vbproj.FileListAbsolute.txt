@@ -21,3 +21,4 @@ C:\Users\amman\documents\visual studio 2010\Projects\Tombola 2.0\Tombola 2.0\obj
 C:\Users\amman\documents\visual studio 2010\Projects\Tombola 2.0\Tombola 2.0\bin\Debug\Tombola 2.0.exe.config
 C:\Users\amman\documents\visual studio 2010\Projects\Tombola 2.0\Tombola 2.0\obj\x86\Debug\Tombola_2._0.Opzioni.resources
 C:\Users\amman\documents\visual studio 2010\Projects\Tombola 2.0\Tombola 2.0\obj\x86\Debug\Tombola_2._0.Information.resources
+C:\Users\amman\documents\visual studio 2010\Projects\Tombola 2.0\Tombola 2.0\obj\x86\Debug\Tombola_2._0.Rewardsvb.resources

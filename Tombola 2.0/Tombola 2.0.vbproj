@@ -137,6 +137,12 @@
     <Compile Include="Opzioni.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Rewardsvb.Designer.vb">
+      <DependentUpon>Rewardsvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rewardsvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ExtractNumber.resx">
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Opzioni.resx">
       <DependentUpon>Opzioni.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rewardsvb.resx">
+      <DependentUpon>Rewardsvb.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

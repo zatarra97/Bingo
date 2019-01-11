@@ -194,7 +194,7 @@
                 'Serve per il controllo successivamente se un numero è stato già estratto
                 TextBox3.Text = " " & Replace(History.TextBoxHistory.Text, " - ", " ")
 
-                'Altrimenti rimuovo solamente l'ultimo numero
+                'Altrimenti rimuovo solamente l'ultimo numero 
             Else
                 newString = History.TextBoxHistory.Text
                 newString = Replace(History.TextBoxHistory.Text, " - " & Labelextractnumber.Text & " ", " ")
@@ -289,7 +289,7 @@
                     End If
                     numeriImmessi += 1
                     Labelimmessi.Text = numeriImmessi     'DA CANCELLARE
-                    numeri(numeroPreciso - 1).BackColor = Color.CornflowerBlue  'coloro il tasto -1 perchè si tratta dell'array
+                    numeri(numeroPreciso - 1).BackColor = coloreScelto  'coloro il tasto -1 perchè si tratta dell'array
 
                     'Aggiorno l'ultimo numero estratto per la funzione "Annulla ultimo numero estratto
                     Labelextractnumber.Text = numeroPreciso - 1
@@ -329,5 +329,10 @@
 
     Private Sub InformazioniSuToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles InformazioniSuToolStripMenuItem.Click
         Information.Show()
+    End Sub
+
+    Private Sub ImpostaPremiToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ImpostaPremiToolStripMenuItem.Click
+        Rewardsvb.Show()
+
     End Sub
 End Class
