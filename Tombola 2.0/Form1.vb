@@ -322,4 +322,12 @@
     Private Sub OpzioniToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OpzioniToolStripMenuItem.Click
         Opzioni.Show()
     End Sub
+
+    Private Sub NuovoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub InformazioniSuToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles InformazioniSuToolStripMenuItem.Click
+        Information.Show()
+    End Sub
 End Class
