@@ -80,6 +80,7 @@ Partial Class ExtractNumber
         Me.Controls.Add(Me.ButtonConfirm)
         Me.Controls.Add(Me.LabelSingleNUmber)
         Me.Controls.Add(Me.LabelDoubleNumber)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "ExtractNumber"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ExtractNumber"
