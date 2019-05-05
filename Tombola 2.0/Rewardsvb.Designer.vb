@@ -23,212 +23,245 @@ Partial Class Rewardsvb
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.CheckBoxAmbo = New System.Windows.Forms.CheckBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBoxAmbo = New System.Windows.Forms.TextBox()
+        Me.TextBoxTerno = New System.Windows.Forms.TextBox()
         Me.CheckBoxTerno = New System.Windows.Forms.CheckBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBoxQuaterna = New System.Windows.Forms.TextBox()
         Me.CheckBoxQuaterna = New System.Windows.Forms.CheckBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBoxCinquina = New System.Windows.Forms.TextBox()
         Me.CheckBoxCinquina = New System.Windows.Forms.CheckBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
+        Me.TextBoxDecina = New System.Windows.Forms.TextBox()
+        Me.CheckBoxDecina = New System.Windows.Forms.CheckBox()
+        Me.TextBoxTombola = New System.Windows.Forms.TextBox()
+        Me.CheckBoxTombola = New System.Windows.Forms.CheckBox()
+        Me.TextBoxTombolino = New System.Windows.Forms.TextBox()
+        Me.CheckBoxTombolino = New System.Windows.Forms.CheckBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
+        Me.TextBoxAltro = New System.Windows.Forms.TextBox()
+        Me.CheckBoxAltro = New System.Windows.Forms.CheckBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'CheckBoxAmbo
         '
         Me.CheckBoxAmbo.AutoSize = True
-        Me.CheckBoxAmbo.Location = New System.Drawing.Point(12, 8)
+        Me.CheckBoxAmbo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBoxAmbo.Location = New System.Drawing.Point(12, 49)
         Me.CheckBoxAmbo.Name = "CheckBoxAmbo"
-        Me.CheckBoxAmbo.Size = New System.Drawing.Size(66, 21)
+        Me.CheckBoxAmbo.Size = New System.Drawing.Size(74, 24)
         Me.CheckBoxAmbo.TabIndex = 1
         Me.CheckBoxAmbo.Text = "Ambo"
         Me.CheckBoxAmbo.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'TextBoxAmbo
         '
-        Me.TextBox1.Location = New System.Drawing.Point(12, 35)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(322, 22)
-        Me.TextBox1.TabIndex = 2
+        Me.TextBoxAmbo.Enabled = False
+        Me.TextBoxAmbo.Location = New System.Drawing.Point(12, 76)
+        Me.TextBoxAmbo.Name = "TextBoxAmbo"
+        Me.TextBoxAmbo.Size = New System.Drawing.Size(344, 22)
+        Me.TextBoxAmbo.TabIndex = 2
         '
-        'TextBox2
+        'TextBoxTerno
         '
-        Me.TextBox2.Location = New System.Drawing.Point(12, 90)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(322, 22)
-        Me.TextBox2.TabIndex = 4
+        Me.TextBoxTerno.Enabled = False
+        Me.TextBoxTerno.Location = New System.Drawing.Point(12, 131)
+        Me.TextBoxTerno.Name = "TextBoxTerno"
+        Me.TextBoxTerno.Size = New System.Drawing.Size(344, 22)
+        Me.TextBoxTerno.TabIndex = 4
         '
         'CheckBoxTerno
         '
         Me.CheckBoxTerno.AutoSize = True
-        Me.CheckBoxTerno.Location = New System.Drawing.Point(12, 63)
+        Me.CheckBoxTerno.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBoxTerno.Location = New System.Drawing.Point(12, 104)
         Me.CheckBoxTerno.Name = "CheckBoxTerno"
-        Me.CheckBoxTerno.Size = New System.Drawing.Size(68, 21)
+        Me.CheckBoxTerno.Size = New System.Drawing.Size(74, 24)
         Me.CheckBoxTerno.TabIndex = 3
         Me.CheckBoxTerno.Text = "Terno"
         Me.CheckBoxTerno.UseVisualStyleBackColor = True
         '
-        'TextBox3
+        'TextBoxQuaterna
         '
-        Me.TextBox3.Location = New System.Drawing.Point(12, 145)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(322, 22)
-        Me.TextBox3.TabIndex = 6
+        Me.TextBoxQuaterna.Enabled = False
+        Me.TextBoxQuaterna.Location = New System.Drawing.Point(12, 186)
+        Me.TextBoxQuaterna.Name = "TextBoxQuaterna"
+        Me.TextBoxQuaterna.Size = New System.Drawing.Size(344, 22)
+        Me.TextBoxQuaterna.TabIndex = 6
         '
         'CheckBoxQuaterna
         '
         Me.CheckBoxQuaterna.AutoSize = True
-        Me.CheckBoxQuaterna.Location = New System.Drawing.Point(12, 118)
+        Me.CheckBoxQuaterna.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBoxQuaterna.Location = New System.Drawing.Point(12, 159)
         Me.CheckBoxQuaterna.Name = "CheckBoxQuaterna"
-        Me.CheckBoxQuaterna.Size = New System.Drawing.Size(90, 21)
+        Me.CheckBoxQuaterna.Size = New System.Drawing.Size(100, 24)
         Me.CheckBoxQuaterna.TabIndex = 5
         Me.CheckBoxQuaterna.Text = "Quaterna"
         Me.CheckBoxQuaterna.UseVisualStyleBackColor = True
         '
-        'TextBox4
+        'TextBoxCinquina
         '
-        Me.TextBox4.Location = New System.Drawing.Point(12, 203)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(322, 22)
-        Me.TextBox4.TabIndex = 8
+        Me.TextBoxCinquina.Enabled = False
+        Me.TextBoxCinquina.Location = New System.Drawing.Point(12, 244)
+        Me.TextBoxCinquina.Name = "TextBoxCinquina"
+        Me.TextBoxCinquina.Size = New System.Drawing.Size(344, 22)
+        Me.TextBoxCinquina.TabIndex = 8
         '
         'CheckBoxCinquina
         '
         Me.CheckBoxCinquina.AutoSize = True
-        Me.CheckBoxCinquina.Location = New System.Drawing.Point(12, 176)
+        Me.CheckBoxCinquina.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBoxCinquina.Location = New System.Drawing.Point(12, 217)
         Me.CheckBoxCinquina.Name = "CheckBoxCinquina"
-        Me.CheckBoxCinquina.Size = New System.Drawing.Size(85, 21)
+        Me.CheckBoxCinquina.Size = New System.Drawing.Size(96, 24)
         Me.CheckBoxCinquina.TabIndex = 7
         Me.CheckBoxCinquina.Text = "Cinquina"
         Me.CheckBoxCinquina.UseVisualStyleBackColor = True
         '
-        'TextBox5
+        'TextBoxDecina
         '
-        Me.TextBox5.Location = New System.Drawing.Point(12, 258)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(322, 22)
-        Me.TextBox5.TabIndex = 10
+        Me.TextBoxDecina.Enabled = False
+        Me.TextBoxDecina.Location = New System.Drawing.Point(12, 299)
+        Me.TextBoxDecina.Name = "TextBoxDecina"
+        Me.TextBoxDecina.Size = New System.Drawing.Size(344, 22)
+        Me.TextBoxDecina.TabIndex = 10
         '
-        'CheckBox5
+        'CheckBoxDecina
         '
-        Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Location = New System.Drawing.Point(12, 231)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(100, 21)
-        Me.CheckBox5.TabIndex = 9
-        Me.CheckBox5.Text = "CheckBox5"
-        Me.CheckBox5.UseVisualStyleBackColor = True
+        Me.CheckBoxDecina.AutoSize = True
+        Me.CheckBoxDecina.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBoxDecina.Location = New System.Drawing.Point(12, 272)
+        Me.CheckBoxDecina.Name = "CheckBoxDecina"
+        Me.CheckBoxDecina.Size = New System.Drawing.Size(84, 24)
+        Me.CheckBoxDecina.TabIndex = 9
+        Me.CheckBoxDecina.Text = "Decina"
+        Me.CheckBoxDecina.UseVisualStyleBackColor = True
         '
-        'TextBox6
+        'TextBoxTombola
         '
-        Me.TextBox6.Location = New System.Drawing.Point(12, 313)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(322, 22)
-        Me.TextBox6.TabIndex = 12
+        Me.TextBoxTombola.Enabled = False
+        Me.TextBoxTombola.Location = New System.Drawing.Point(12, 354)
+        Me.TextBoxTombola.Name = "TextBoxTombola"
+        Me.TextBoxTombola.Size = New System.Drawing.Size(344, 22)
+        Me.TextBoxTombola.TabIndex = 12
         '
-        'CheckBox6
+        'CheckBoxTombola
         '
-        Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.Location = New System.Drawing.Point(12, 286)
-        Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(100, 21)
-        Me.CheckBox6.TabIndex = 11
-        Me.CheckBox6.Text = "CheckBox6"
-        Me.CheckBox6.UseVisualStyleBackColor = True
+        Me.CheckBoxTombola.AutoSize = True
+        Me.CheckBoxTombola.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBoxTombola.Location = New System.Drawing.Point(12, 327)
+        Me.CheckBoxTombola.Name = "CheckBoxTombola"
+        Me.CheckBoxTombola.Size = New System.Drawing.Size(95, 24)
+        Me.CheckBoxTombola.TabIndex = 11
+        Me.CheckBoxTombola.Text = "Tombola"
+        Me.CheckBoxTombola.UseVisualStyleBackColor = True
         '
-        'TextBox7
+        'TextBoxTombolino
         '
-        Me.TextBox7.Location = New System.Drawing.Point(12, 368)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(322, 22)
-        Me.TextBox7.TabIndex = 14
+        Me.TextBoxTombolino.Enabled = False
+        Me.TextBoxTombolino.Location = New System.Drawing.Point(12, 409)
+        Me.TextBoxTombolino.Name = "TextBoxTombolino"
+        Me.TextBoxTombolino.Size = New System.Drawing.Size(344, 22)
+        Me.TextBoxTombolino.TabIndex = 14
         '
-        'CheckBox7
+        'CheckBoxTombolino
         '
-        Me.CheckBox7.AutoSize = True
-        Me.CheckBox7.Location = New System.Drawing.Point(12, 341)
-        Me.CheckBox7.Name = "CheckBox7"
-        Me.CheckBox7.Size = New System.Drawing.Size(100, 21)
-        Me.CheckBox7.TabIndex = 13
-        Me.CheckBox7.Text = "CheckBox7"
-        Me.CheckBox7.UseVisualStyleBackColor = True
+        Me.CheckBoxTombolino.AutoSize = True
+        Me.CheckBoxTombolino.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBoxTombolino.Location = New System.Drawing.Point(12, 382)
+        Me.CheckBoxTombolino.Name = "CheckBoxTombolino"
+        Me.CheckBoxTombolino.Size = New System.Drawing.Size(108, 24)
+        Me.CheckBoxTombolino.TabIndex = 13
+        Me.CheckBoxTombolino.Text = "Tombolino"
+        Me.CheckBoxTombolino.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(259, 460)
+        Me.Button1.Location = New System.Drawing.Point(274, 584)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(82, 33)
         Me.Button1.TabIndex = 15
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Conferma"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'TextBox8
+        'TextBoxAltro
         '
-        Me.TextBox8.Location = New System.Drawing.Point(12, 423)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(322, 22)
-        Me.TextBox8.TabIndex = 19
+        Me.TextBoxAltro.Enabled = False
+        Me.TextBoxAltro.Location = New System.Drawing.Point(12, 464)
+        Me.TextBoxAltro.Multiline = True
+        Me.TextBoxAltro.Name = "TextBoxAltro"
+        Me.TextBoxAltro.Size = New System.Drawing.Size(344, 100)
+        Me.TextBoxAltro.TabIndex = 19
         '
-        'CheckBox8
+        'CheckBoxAltro
         '
-        Me.CheckBox8.AutoSize = True
-        Me.CheckBox8.Location = New System.Drawing.Point(12, 396)
-        Me.CheckBox8.Name = "CheckBox8"
-        Me.CheckBox8.Size = New System.Drawing.Size(100, 21)
-        Me.CheckBox8.TabIndex = 18
-        Me.CheckBox8.Text = "CheckBox8"
-        Me.CheckBox8.UseVisualStyleBackColor = True
+        Me.CheckBoxAltro.AutoSize = True
+        Me.CheckBoxAltro.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBoxAltro.Location = New System.Drawing.Point(12, 437)
+        Me.CheckBoxAltro.Name = "CheckBoxAltro"
+        Me.CheckBoxAltro.Size = New System.Drawing.Size(66, 24)
+        Me.CheckBoxAltro.TabIndex = 18
+        Me.CheckBoxAltro.Text = "Altro"
+        Me.CheckBoxAltro.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(84, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(175, 25)
+        Me.Label1.TabIndex = 20
+        Me.Label1.Text = "Premi Tombolata"
         '
         'Rewardsvb
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(368, 564)
-        Me.Controls.Add(Me.TextBox8)
-        Me.Controls.Add(Me.CheckBox8)
+        Me.ClientSize = New System.Drawing.Size(368, 629)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.TextBoxAltro)
+        Me.Controls.Add(Me.CheckBoxAltro)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.CheckBox7)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.CheckBox6)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.CheckBox5)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.TextBoxTombolino)
+        Me.Controls.Add(Me.CheckBoxTombolino)
+        Me.Controls.Add(Me.TextBoxTombola)
+        Me.Controls.Add(Me.CheckBoxTombola)
+        Me.Controls.Add(Me.TextBoxDecina)
+        Me.Controls.Add(Me.CheckBoxDecina)
+        Me.Controls.Add(Me.TextBoxCinquina)
         Me.Controls.Add(Me.CheckBoxCinquina)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.TextBoxQuaterna)
         Me.Controls.Add(Me.CheckBoxQuaterna)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TextBoxTerno)
         Me.Controls.Add(Me.CheckBoxTerno)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TextBoxAmbo)
         Me.Controls.Add(Me.CheckBoxAmbo)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "Rewardsvb"
-        Me.Text = "Rewardsvb"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Premi"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents CheckBoxAmbo As System.Windows.Forms.CheckBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxAmbo As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxTerno As System.Windows.Forms.TextBox
     Friend WithEvents CheckBoxTerno As System.Windows.Forms.CheckBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxQuaterna As System.Windows.Forms.TextBox
     Friend WithEvents CheckBoxQuaterna As System.Windows.Forms.CheckBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxCinquina As System.Windows.Forms.TextBox
     Friend WithEvents CheckBoxCinquina As System.Windows.Forms.CheckBox
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents CheckBox5 As System.Windows.Forms.CheckBox
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
-    Friend WithEvents CheckBox6 As System.Windows.Forms.CheckBox
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
-    Friend WithEvents CheckBox7 As System.Windows.Forms.CheckBox
+    Friend WithEvents TextBoxDecina As System.Windows.Forms.TextBox
+    Friend WithEvents CheckBoxDecina As System.Windows.Forms.CheckBox
+    Friend WithEvents TextBoxTombola As System.Windows.Forms.TextBox
+    Friend WithEvents CheckBoxTombola As System.Windows.Forms.CheckBox
+    Friend WithEvents TextBoxTombolino As System.Windows.Forms.TextBox
+    Friend WithEvents CheckBoxTombolino As System.Windows.Forms.CheckBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
-    Friend WithEvents CheckBox8 As System.Windows.Forms.CheckBox
+    Friend WithEvents TextBoxAltro As System.Windows.Forms.TextBox
+    Friend WithEvents CheckBoxAltro As System.Windows.Forms.CheckBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class
